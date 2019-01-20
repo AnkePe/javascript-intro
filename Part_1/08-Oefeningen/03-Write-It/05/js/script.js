@@ -34,8 +34,11 @@ const extras = [
 ];
 
 const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
-
+const add = (fee, extra) => fee + extra
+fees.forEach (fee => 
+              
 document.write (wrapWithTag(fee.title, `h2`));
 extras.forEach (extra => 
-    document.write (wrapWithTag(`€ ${extra.price}extra.title, `p`)), wrapWithTag(`u betaalt: `));
+    document.write (wrapWithTag(`€ ${extra.price} $(extra.title}`, `p`)), wrapWithTag(`u betaalt: `€ ${extra.price + fee.price}`, `p`);
 document.write (`</ul>`);
+              );
